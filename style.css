@@ -1,0 +1,108 @@
+@font-face {
+  font-family: poppins;
+  src: url(font/poppinsSemiBold.ttf);
+}
+
+* {
+  border-collapse: collapse;
+  padding: 0px;
+  margin: 0px;
+  font-family: poppins;
+}
+
+html {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.group {
+  display: flex;
+  margin-top: 10vh;
+  margin-left: calc(50vw - (275px / 2));
+}
+
+.info1 {
+  padding: 10px 50px 0px 0px;
+  font-size: 1.5em;
+}
+
+.info2 {
+  padding: 10px 0px 0px 50px;
+  font-size: 1.5em;
+}
+
+button {
+  width: 125px;
+  padding: 10px 20px 10px 20px;
+  background-color: aliceblue;
+  border: black 5px solid;
+  border-radius: 0px;
+  font-size: 1.25em;
+  box-shadow: 0px 0px 10px #5f5f5f;
+}
+
+#container {
+  width: 500px;
+  height: 500px;
+  border: black 5px solid;
+  background-color: aliceblue;
+  border-collapse: collapse;
+  margin-left: calc(50vw - 500px / 2);
+  margin-top: calc(30vh - 500px / 2);
+  box-shadow: 0px 0px 10px #5f5f5f;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.field {
+  display: grid;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  width: calc(500px / 16);
+  height: calc(500px / 16);
+  border-collapse: collapse;
+  font-size: 1.15em;
+  text-align: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.G1 {
+  background-color: rgb(0, 128, 0);
+}
+
+.G2 {
+  background-color: rgb(30, 150, 30);
+}
+
+.B1 {
+  background-color: rgb(233, 233, 205);
+}
+
+.B2 {
+  background-color: rgb(215, 215, 183);
+}
+
+.field:hover {
+  filter: brightness(60%);
+}
+
+button:hover {
+  filter: brightness(80%);
+}
