@@ -27,6 +27,7 @@ let LCaudio = document.querySelector("#lc");
 LCaudio.volume = 0.3;
 let RCaudio = document.querySelector("#rc");
 RCaudio.volume = 0.3;
+let flagHTML = document.getElementById("flagCount");
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 function loadBoard() {
@@ -34,6 +35,7 @@ function loadBoard() {
   mineHit = false;
   container.innerHTML = "";
   flagCount = 40;
+  flagHTML.innerHTML = `${flagCount}`;
   map = [];
   mineMap = [];
   fillList = [];
@@ -132,7 +134,6 @@ function click(elm, e) {
   }
   if (e == "right") {
     if (!gameOver) {
-      flagHTML = document.getElementById("flagCount");
       if (elm.innerHTML == `<img src="${assets["redFlag"]}">`) {
         elm.innerHTML = "";
         flagCount++;
